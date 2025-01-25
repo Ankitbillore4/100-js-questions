@@ -339,11 +339,11 @@
 // Q49.Write a function that converts a string to kebab-case (e.g., "Hello World" → "hello-world").
 
 // function toKebabCase(str) {
-    // return str
-        // .toLowerCase() 
-        // .trim() 
-        // .replace(/[\s]+/g, '-') 
-        // .replace(/[^\w-]+/g, '');
+ // return str
+// .toLowerCase() 
+// .trim() 
+// .replace(/[\s]+/g, '-') 
+// .replace(/[^\w-]+/g, '');
 // }
 // const testStringForKebabCase = "Hello World";
 // console.log("Kebab-case string:", toKebabCase(testStringForKebabCase));
@@ -351,7 +351,231 @@
 // Q50.Create a function that logs "Hello, World!" every time it is called.
 
 // function logHelloWorld() {
-    // console.log("Hello, World!");
+ // console.log("Hello, World!");
 // }
 // logHelloWorld()
 // logHelloWorld()
+
+// Q51.Write a program to check if a number is positive, negative, or zero.
+// function checkNumber(num) {
+    // if (num > 0) {
+        // return "Positive";
+    // }
+    // if (num < 0) {
+        // return "Negative";
+    // }
+    // return "Zero";
+// }
+// console.log(checkNumber(5));   
+// console.log(checkNumber(-3));  
+// console.log(checkNumber(0)); 
+// 
+
+// Q52.Create a program to check if a year is a leap year.
+// function isLeapYear(year) {
+    // if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        // return true;
+    // }
+    // return false;
+// }
+// console.log(isLeapYear(2020)); 
+// console.log(isLeapYear(2021)); 
+// console.log(isLeapYear(1900)); 
+// console.log(isLeapYear(2000)); 
+
+// Q53.Write an if...else statement to determine if a person can vote based on their age.
+// function canVote(age) {
+    // if (age >= 18) {
+        // return "You are eligible to vote.";
+    // } else {
+        // return "You are not eligible to vote.";
+    // }
+// }
+// console.log(canVote(20)); 
+// console.log(canVote(16)); 
+
+// Q54.Use a switch statement to log the name of the day based on its number (1 = Monday).
+// function logDayName(dayNumber) {
+    // switch (dayNumber) {
+        // case 1:
+            // console.log("Monday");
+            // break;
+        // case 2:
+            // console.log("Tuesday");
+            // break;
+        // default:
+            // console.log("Invalid day number");
+    // }
+// }
+// logDayName(1); 
+// logDayName(2);
+// logDayName(1); 
+
+// Q55.	Write a program to check if a number is divisible by 3 and 5.
+// function isDivisibleBy3And5(number) {
+    // if (number % 3 === 0 && number % 5 === 0) {
+        // return true;
+    // }
+    // return false;
+// }
+// console.log(isDivisibleBy3And5(15)); 
+// console.log(isDivisibleBy3And5(9));  
+// console.log(isDivisibleBy3And5(10));
+// console.log(isDivisibleBy3And5(30)); 
+
+// Q56. Create a program to check the grade of a student based on marks
+// function checkGrade(marks) {
+    // if (marks >= 90) {
+        // return "A";
+    // } else if (marks >= 80) {
+        // return "B";
+    // } else if (marks >= 70) {
+        // return "C";
+    // } else if (marks >= 60) {
+        // return "D";
+    // } else {
+        // return "F";
+    // }
+// }
+// console.log(checkGrade(95));  
+// console.log(checkGrade(85));  
+// console.log(checkGrade(75));  
+// console.log(checkGrade(65)); 
+// console.log(checkGrade(55));  
+
+// Q57. Write an if condition to compare two strings and log if they are equal.
+// const string1 = "Hello";
+// const string2 = "Hello";
+// if (string1 === string2) {
+    // console.log("The strings are equal.");
+// } else {
+    // console.log("The strings are not equal.");
+// }
+// 
+
+// Q58.Use a ternary operator to check if a number is even or odd.
+// const number = 4; 
+// const result = (number % 2 === 0) ? "Even" : "Odd";
+// console.log(`The number ${number} is ${result}.`)
+
+// Q59.Write a program to find the largest of three numbers using if...else.
+// function findLargestOfThree(num1, num2, num3) {
+    // if (num1 >= num2 && num1 >= num3) {
+        // return num1;
+    // } else if (num2 >= num1 && num2 >= num3) {
+        // return num2;
+    // } else {
+        // return num3;
+    // }
+// }
+// console.log(findLargestOfThree(10, 20, 30)); 
+// console.log(findLargestOfThree(5, 3, 8));    
+// console.log(findLargestOfThree(1, 2, 1));  
+
+// Q60.Create a program to calculate the discount based on the price of an item.
+// function calculateDiscount(price) {
+    // let discount;
+    // if (price > 100) {
+        // discount = 0.2; 
+    // } else if (price > 50) {
+        // discount = 0.1; 
+    // } else {
+        // discount = 0; 
+    // }
+    // return price - (price * discount);
+// }
+// console.log(calculateDiscount(120)); 
+// console.log(calculateDiscount(75)); 
+// console.log(calculateDiscount(30)); 
+
+// Q61.Create an object with properties name, age, and city. Log the object.
+// const person = {
+    // name: "John Doe",
+    // age: 30,
+    // city: "New York"
+// };
+// console.log(person);
+
+// Q62.Add a new property isStudent to the object above and set it to true.
+// const person = {
+    // name: "John Doe",
+    // age: 30,
+    // city: "New York",
+    // isStudent : true
+//    };
+//    console.log(person);
+
+// Q63.Access and log the value of the city property using bracket notation.
+// const person = {
+    // name: "John Doe",
+    // age: 30,
+    // city: "New York",
+    // isStudent: true
+// };
+// console.log(person["city"]);
+
+
+// Q64.Delete the age property from an object and log the updated object.
+// const person = {
+    // name: "John Doe",
+    // age: 30,
+    // city: "New York",
+    // isStudent: true
+// };
+// delete person.age;
+// console.log(person);
+
+// Q65.Write a function that accepts an object and logs all its keys.
+// function logObjectKeys(obj) {
+    // console.log("keys is",logObjectKeys); 
+// }
+// logObjectKeys()
+
+// Q66.Create an array of objects representing books with title and author properties.
+// const books = [
+    // { title: "To Kill a Mockingbird", author: "Harper Lee" },
+    // { title: "1984", author: "George Orwell" },
+    // { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+    // { title: "The Catcher in the Rye", author: "J.D. Salinger" }
+// ];
+// console.log(books);
+
+// Q67.Access and log the author of the second book in the array.
+// const books = [
+    // { title: "To Kill a Mockingbird", author: "Harper Lee" },
+    // { title: "1984", author: "George Orwell" },
+    // { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+    // { title: "The Catcher in the Rye", author: "J.D. Salinger" }
+// ];
+// console.log(books[1].author); 
+
+// Q68.Write a program to check if a specific key exists in an object.
+// function checkKeyExists(obj, key) {
+    // return obj.hasOwnProperty(key);
+// }
+// const person = {
+    // name: "John Doe",
+    // age: 30,
+    // city: "New York",
+    // isStudent: true
+// };
+// console.log(checkKeyExists(person, "age")); 
+// console.log(checkKeyExists(person, "address"));
+
+// Q69.Create a function to count the number of keys in an object.
+// function countKeys(obj) {
+    // return Object.keys(obj).length;
+// }
+// const person = {
+    // name: "John Doe",
+    // age: 30,
+    // city: "New York",
+    // isStudent: true
+// };
+// console.log(countKeys(person)); 
+
+// Q70.Use Object.assign() to merge two objects.
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { b: 3, c: 4 };
+// const mergedObject = Object.assign({}, obj1, obj2);
+// console.log(mergedObject);
