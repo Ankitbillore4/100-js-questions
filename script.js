@@ -579,3 +579,290 @@
 // const obj2 = { b: 3, c: 4 };
 // const mergedObject = Object.assign({}, obj1, obj2);
 // console.log(mergedObject);
+
+// Q71.Create a string and log its length.
+// const myString = "Hello, world!";
+// console.log(myString.length);
+
+// Q72.Extract the last 4 characters of a string.
+// const myString = "Hello, world!";
+// const lastFourCharacters = myString.slice(-4);
+// console.log(lastFourCharacters);
+
+// Q73.Convert a string to lowercase and log it.
+// const myString = "HELLO, WORLD!";
+// console.log(myString.toLowerCase());
+
+// Q74.Split a sentence into words using .split() and log the result.
+// const sentence = "This is a sample sentence to be split into words.";
+// const wordsArray = sentence.split(" ");
+// console.log(wordsArray);
+
+// Q75.Find the position of the first occurrence of "a" in a string.
+// const myString = "This is a sample sentence.";
+// const position = myString.indexOf("a");
+// console.log(position);
+
+// Q76.Replace "JavaScript" with "JS" in the string "I love JavaScript".
+// const myString = "I love JavaScript";
+// const newString = myString.replace("JavaScript", "JS");
+// console.log(newString);
+
+// Q77.Repeat a string 3 times using .repeat().
+// const myString = "Hello!";
+// const repeatedString = myString.repeat(3);
+// console.log(repeatedString);
+
+// Q78.Create a function that checks if a string contains a specific word.
+// function containsWord(str, word) {
+    // return str.includes(word);
+// }
+// const myString = "This is a sample sentence.";
+// const wordToCheck = "sample";
+// console.log(containsWord(myString, wordToCheck));
+
+// Q79.Write a program to remove whitespace from both ends of a string.
+// const myString = "   Hello, world!   ";
+// const trimmedString = myString.trim();
+// console.log(trimmedString);
+
+// Q80.Create a function to count the number of vowels in a string.
+// function countVowels(str) {
+    // const vowels = 'aeiouAEIOU';
+    // let count = 0;
+    // for (let char of str) {
+        // if (vowels.includes(char)) {
+            // count++;
+        // }
+    // }
+    // return count;
+// }
+// const myString = "This is a sample sentence.";
+// console.log(countVowels(myString)); 
+
+// Q81.Write a function that accepts an array of numbers and returns only the even numbers.
+// function getEvenNumbers(numbers) {
+    // return numbers.filter(num => num % 2 === 0);
+// }
+// const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(getEvenNumbers(numbersArray));
+
+// Q82.Create a program to count the occurrences of a specific value in an array.
+// function countOccurrences(array, value) {
+    // return array.filter(item => item === value).length;
+// }
+// const numbersArray = [1, 2, 3, 1, 4, 1, 5, 6, 1];
+// const valueToCount = 1;
+// console.log(countOccurrences(numbersArray, valueToCount));
+
+// Q83.Write a function that accepts a string and returns whether it’s a palindrome.
+// function isPalindrome(str) {
+    // const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    // const reversedStr = cleanedStr.split('').reverse().join('');
+    // return cleanedStr === reversedStr;
+// }
+// const testString = "A man, a plan, a canal, Panama";
+// console.log(isPalindrome(testString)); // true
+
+// Q84.Create a program to log a pattern:
+// *
+// **
+// ***
+// ****
+// for (let i = 1; i <= 4; i++) {
+    // console.log('*'.repeat(i));
+// }
+
+// Q85.Write a function that returns the square of each number in an array.
+// function squareNumbers(numbers) {
+    // return numbers.map(num => num * num);
+// }
+// const numbersArray = [1, 2, 3, 4, 5];
+// console.log(squareNumbers(numbersArray)); 
+
+// Q86.Use a for loop to sum all odd numbers between 1 and 50.
+// let sum = 0;
+// for (let i = 1; i <= 50; i++) {
+    // if (i % 2 !== 0) {
+        // sum += i;
+    // }
+// }
+// console.log(sum); 
+
+// Q87.Create an object representing a person and log their full name.
+// const person = {
+    // firstName: "John",
+    // lastName: "Doe",
+    // fullName: function() {
+        // return `${this.firstName} ${this.lastName}`;
+    // }
+// };
+// console.log(person.fullName());
+
+// Q88.Write a program to convert the string "10" to a number and add 5 to it.
+// const stringNumber = "10";
+// const number = Number(stringNumber);
+// const result = number + 5;
+// console.log(result); 
+
+// Q89.Write a program to reverse an array without using .reverse().
+// function reverseArray(arr) {
+    // let reversed = [];
+    // for (let i = arr.length - 1; i >= 0; i--) {
+        // reversed.push(arr[i]);
+    // }
+    // return reversed;
+// }
+// const originalArray = [1, 2, 3, 4, 5];
+// const reversedArray = reverseArray(originalArray);
+// console.log(reversedArray);
+
+// Q90.Create a program to check if an array is empty.
+// function isArrayEmpty(arr) {
+    // return arr.length === 0;
+// }
+// const testArray1 = [];
+// const testArray2 = [1, 2, 3];
+// console.log(isArrayEmpty(testArray1)); 
+// console.log(isArrayEmpty(testArray2)); 
+
+// Q91.Write a program to fetch the current date and format it as DD/MM/YYYY.
+// function formatDate() {
+    // const date = new Date();
+    // const day = String(date.getDate()).padStart(2, '0');
+    // const month = String(date.getMonth() + 1).padStart(2, '0'); 
+    // const year = date.getFullYear();
+    // return `${day}/${month}/${year}`;
+// }
+// console.log(formatDate());
+
+// Q92.Write a program to find the smallest number in an array.
+// function findSmallestNumber(arr) {
+    // if (arr.length === 0) return undefined; 
+    // let smallest = arr[0];
+    // for (let i = 1; i < arr.length; i++) {
+        // if (arr[i] < smallest) {
+            // smallest = arr[i];
+        // }
+    // }
+    // return smallest;
+// }
+// const numbersArray = [5, 3, 8, 1, 4];
+// const smallestNumber = findSmallestNumber(numbersArray);
+// console.log(smallestNumber);
+
+// Q93.Create a function to return the Fibonacci sequence up to n terms.
+// function fibonacci(n) {
+    // const sequence = [];
+    // for (let i = 0; i < n; i++) {
+        // if (i === 0) {
+            // sequence.push(0);
+        // } else if (i === 1) {
+            // sequence.push(1);
+        // } else {
+            // sequence.push(sequence[i - 1] + sequence[i - 2]);
+        // }
+    // }
+    // return sequence;
+// }
+// const nTerms = 10;
+// console.log(fibonacci(nTerms));
+
+// Q94.Use a try...catch block to handle division by zero.
+// function divide(a, b) {
+    // try {
+        // if (b === 0) {
+            // throw new Error("Division by zero is not allowed.");
+        // }
+        // return a / b;
+    // } catch (error) {
+        // console.error(error.message);
+        // return null; 
+    // }
+// }
+// console.log(divide(10, 2)); 
+// console.log(divide(10, 0)); 
+
+// Q95.Write a program to find the index of the first vowel in a string.
+// function findFirstVowelIndex(str) {
+    // const vowels = 'aeiouAEIOU';
+    // for (let i = 0; i < str.length; i++) {
+        // if (vowels.includes(str[i])) {
+            // return i;
+        // }
+    // }
+    // return -1; 
+// }
+// const testString = "hello world";
+// console.log(findFirstVowelIndex(testString)); 
+
+// Q96.Create a function that accepts an array and returns only unique values.
+// function uniqueValues(array) {
+    // const uniqueArray = [];
+    // for (let i = 0; i < array.length; i++) {
+        // if (!uniqueArray.includes(array[i])) {
+            // uniqueArray.push(array[i]);
+        // }
+    // }
+    // return uniqueArray;
+// }
+// const sampleArray = [1, 2, 2, 3, 4, 4, 5];
+// console.log(uniqueValues(sampleArray));
+
+// Q97.Write a program to merge two sorted arrays into one sorted array.
+// function mergeSortedArrays(arr1, arr2) {
+    // let mergedArray = [];
+    // let i = 0, j = 0;
+    // while (i < arr1.length && j < arr2.length) {
+        // if (arr1[i] < arr2[j]) {
+            // mergedArray.push(arr1[i]);
+            // i++;
+        // } else {
+            // mergedArray.push(arr2[j]);
+            // j++;
+        // }
+    // }
+    // while (i < arr1.length) {
+        // mergedArray.push(arr1[i]);
+        // i++;
+    // }
+    // while (j < arr2.length) {
+        // mergedArray.push(arr2[j]);
+        // j++;
+    // }
+    // return mergedArray;
+// }
+// const array1 = [1, 3, 5];
+// const array2 = [2, 4, 6];
+// console.log(mergeSortedArrays(array1, array2)); 
+
+// Q98.Create a function to count the number of words in a string.
+// function countWords(str) {
+    // const words = str.trim().split(/\s+/).filter(word => word.length > 0);
+    // return words.length;
+// }
+// const testString = "Hello world! This is a test.";
+// console.log(countWords(testString)); 
+
+// Q99.Write a program to toggle a button’s background color when clicked.
+// const button = document.createElement('button');
+// button.textContent = 'Click me';
+// button.style.backgroundColor = 'blue';
+// button.style.color = 'white';
+// button.style.padding = '10px 20px';
+// button.style.border = 'none';
+// button.style.cursor = 'pointer';
+// button.addEventListener('click', () => {
+    // button.style.backgroundColor = button.style.backgroundColor === 'blue' ? 'green' : 'blue';
+// });
+// document.body.appendChild(button);
+
+// Q100.Write a function to check if all elements in an array are greater than a specific value.
+// function areAllElementsGreaterThan(array, value) {
+    // return array.every(element => element > value);
+// }
+// const numbersArray = [5, 10, 15, 20];
+// const threshold = 3;
+// console.log(areAllElementsGreaterThan(numbersArray, threshold));
+
+
