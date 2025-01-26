@@ -1,3 +1,6 @@
+// Here is a collection of 100 JavaScript questions, divided into groups of 10, based on topics 1-8, with increasing complexity.
+
+
 // Q1.Log your name and favorite hobby to the console.
 // const Name = "Ankit billore" 
 // const hobby = "Music"
